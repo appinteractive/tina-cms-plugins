@@ -1,0 +1,45 @@
+{
+  "name": "tina-cms-plugins",
+  "description": "Awesome Field Plugins for TinaCMS",
+  "author": "Grzegorz Leoniec <github@app-interactive.de>",
+  "version": "0.0.1",
+  "type": "module",
+  "source": "src/reference.ts",
+  "exports": {
+    "require": "./dist/reference.cjs",
+    "default": "./dist/reference.modern.js",
+    "styles": "./dist/reference.css"
+  },
+  "private": true,
+  "main": "./dist/reference.cjs",
+  "module": "./dist/reference.module.js",
+  "unpkg": "./dist/reference.umd.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "tailwind": "tailwindcss -i ./src/styles.css -o ./src/output/styles.css --watch"
+  },
+  "style": "./dist/reference.css",
+  "license": "MIT",
+  "devDependencies": {
+    "microbundle": "^0.15.1",
+    "postcss-import": "^15.1.0",
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.14",
+    "@heroicons/react": "^2.0.17",
+    "clsx": "^1.2.1",
+    "fuse.js": "^6.6.2"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "postcss": {
+    "extract": true,
+    "plugins": {
+      "postcss-import": {}
+    }
+  }
+}
