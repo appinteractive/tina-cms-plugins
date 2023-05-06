@@ -4,9 +4,9 @@ This is a collection of plugins for [TinaCMS](https://tinacms.org).
 
 ## Installation
 
-Note: Currently you have to link this repository inside your project.
-
 Note: This is a work in progress and not ready for production.
+
+Currently you have to link this repository by calling following link command (you can use your favorite package manager) inside thos tepo and the one you want to use it (in thst order)
 
 ```bash
 yarn link tina-cms-plugins
