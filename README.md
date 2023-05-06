@@ -21,6 +21,10 @@ pnpm run dev
 
 ## Usage
 
+```bash
+yarn link tina-cms-plugins
+```
+
 You can import the plugins like this inside your tina schema
 
 ```js
